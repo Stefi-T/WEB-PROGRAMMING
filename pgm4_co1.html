@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="fo.css">
+<style>
+input[type=text], input[type=password]
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}</style>
+</head>
+<body>
+    <h1 style="color: #000; padding-bottom: 30px;font-weight: 20px;text-align: center">REGISTRATION FORM</h1>
+    <form name="form1" action="pgm5_co5.html">
+    <table align="center">
+        <tr><td>
+NAME:</td><td><input type="text" name="f1" size="10" autofocus="required"/></td></tr><tr><td></td></tr>
+<tr><td>ADDRESS:</td><td><textarea name="add" rows="4" cols="50" placeholder="Must enter your pincode"></textarea></td></tr><tr><td></td></tr>
+<tr><td>AGE:</td><td><input type="number" name="f2"/></td></tr>
+<tr><td>DOB:</td><td><input type="date" name="d"/></td></tr>
+<tr><td>PHONE:</td><td><input type="number" name="f3"/></td></tr>
+<tr><td>
+    EMAIL:</td><td><input type="email" name="f4"/></td></tr>
+    <tr><td>
+        MOBILE:</td><td><input type="tel" name="f5"/></td></tr>
+        <tr><td>
+            PASSWORD:</td><td><input type="password" name="f6"/></td></tr><tr><td></td></tr>
+            <tr><td>GENDER:</td><td>MALE<input type="radio" id="html" name="g" value="MALE">
+                FEMALE<input type="radio" id="html" name="g" value="FEMALE" checked="true"></td></tr><tr><td></tr>
+            <tr><td>STATE:</td><td><select name="state">
+                <option selected="" value="default">Please select a state</option>
+                <option value="Andhra Pradesh">KERALA</option>
+                <option value="Andaman and Nicobar Islands">TAMILNADU</option>
+                <option value="Arunachal Pradesh">KARNATAKA</option>
+                <option value="Assam">ASSAM</option>
+                <option value="Bihar">MAHARASHTRA</option>
+            </select>
+            </td></tr><tr><td></td></tr><tr><td></td></tr>
+            <br>
+            <tr><td>LANGUAGE KNOWN:</td><td><input type="checkbox"  name="l1" value="m">C++<br>
+            <input type="checkbox"  name="l2" value="m2">java<br>
+            <input type="checkbox"  name="l4" value="m4">php<br>
+            <input type="checkbox"  name="l3" value="m3">python</td></tr>
+            <tr>
+            <td align="center"><input type="submit" name="s">
+            <input type="reset" name="r"></td></tr>
+</table>
+        </form>
+   
+</body>
+</html>
