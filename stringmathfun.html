@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title>String Functions</title>
+        <script>
+            function strings()
+            {
+                var s=document.getElementById('str').value;
+                fst=s.charAt(0);
+                document.getElementById('first').value=fst;
+                lw=s.toLowerCase();
+                document.getElementById('lower').value=lw;
+                up=s.toUpperCase();
+                document.getElementById('upper').value=up;
+                rv=s.reverse()
+                document.getElementById('rev').value=rv;
+            }
+            function cont()
+            {
+                var s=document.getElementById('str').value;
+                var s1=document.getElementById('con').value;
+                cont=s.concat(s1);
+                document.getElementById('conct').value=cont;
+            }
+            function replace()
+            {
+                var s=document.getElementById('conct').value;
+                var s2=document.getElementById('old').value;
+                var s3=document.getElementById('new').value;
+                ns=s.replace(s2,s3);
+                document.getElementById('news').value=ns;
+            }
+            function index()
+            {
+                var s=document.getElementById('news').value;
+                var i=document.getElementById('element').value;
+                ind=s.indexOf(i);
+                document.getElementById('indexx').value=ind;
+            }
+            function slice()
+            {
+                var s=document.getElementById('news').value;
+                var s2=document.getElementById('start').value;
+                var s3=document.getElementById('end').value;
+                sl=s.slice(s2,s3);
+                document.getElementById('sl').value=sl;
+            }
+            function reverse()
+            {
+                var s=document.getElementById('news').value;
+                sl=s.reverse(s2,s3);
+                document.getElementById('sl').value=sl;
+            }
+            function round()
+            {
+                var s=document.getElementById('f1').value;
+                re=Math.round(s);
+                document.getElementById('r').value=re;
+
+            }
+            function sqroot()
+            {
+                var s=document.getElementById('f1').value;
+                re=Math.sqrt(s);
+                document.getElementById('r').value=re;
+            }
+            function ceil()
+            {
+                var s=document.getElementById('f1').value;
+                re=Math.ceil(s);
+                document.getElementById('r').value=re;
+            }  
+            function floor()
+            {
+                var s=document.getElementById('f1').value;
+                re=Math.floor(s);
+                document.getElementById('r').value=re;
+            }
+            function log()
+            {
+                var s=document.getElementById('f1').value;
+                re=Math.log(s);
+                document.getElementById('r').value=re;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <center><b><h1>String Functions</h1></b></center>
+        <br>
+        <table align="center">
+            <tr>
+                <th>
+                   <label for="">Enter a String</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='str'>
+                </td>
+                <td><button onclick="strings()">ok</button></td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">Element at first position</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='first'>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">To lower case</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='lower'>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">To upper case</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='upper'>
+                </td>
+            </tr>
+            
+            
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">Enter String to concat</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='con'>
+                </td>
+                <td><button onclick="cont()">ok</button></td>
+                <td>
+                    <input type="text" id='conct'>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">Enter string to be replaced</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='old'>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">Enter new string</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='new'>
+                </td>
+                <td><button onclick="replace()">ok</button></td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">New string</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='news'>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">Enter the element to get its index value</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="text" id='element'>
+                </td>
+                <td><button onclick="index()">ok</button></td>
+                <td>
+                    <input type="text" id='indexx'>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">Enter starting index to Slice</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="number" id='start'>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="" style="font-size: 1em;">Enter ending index to Slice</label>
+                </th>
+                <th>:</th>
+                <td>
+                    <input type="number" id='end'>
+                </td>
+                <td><button onclick="slice()">ok</button></td>
+                <td>
+                    <input type="text" id='sl'>
+                </td>
+            </tr>
+        </table>
+        <h1 align="center">Math Functions</h1>
+<table align="center">
+    <tr><td>Enter the number:</td></tr>
+    <tr><td><input id="f1"></td></tr>
+    <tr><td>
+    <button onclick="round()">ROUND</button>
+    <button onclick="floor()">FLOOR</button>
+    <button onclick="ceil()">CEIL</button>
+    <button onclick="sqroot()">SQRT</button>
+    <button onclick="log()">LOG</button></td></tr>
+    <tr><td></td></tr>
+    <tr><td align="center"> RESULT: <input id="r"><br></td></tr></td></tr>
+   
+</table>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var c=0;
+            var score=0;
+            function funct()
+            {
+                if(document.getElementById('javascript').checked)
+        
+              {
+               score++;
+              }  
+              if(document.getElementById('html').checked)
+        
+              {
+               score++;
+              }  
+              if(document.getElementById('i').checked)
+        
+              {
+               score++;
+              } 
+              document.write("your score is:") ;
+              document.write(score);
+                
+            }
+</script>
+</head>
+<body>
+    <h3 align="center"><u>EXAM</u></h1>
+<form name="form1">
+    <div>
+        <p>Which is the best programming language?</p>
+           <p><input type="radio" id="javascript" name="s1" value="javascript">javascript
+            <p><input type="radio" id="c++" name="s1" value="c++">c++</p>
+            <p><input type="radio" id="C"  name="s1" value="C">C
+            <p><input type="radio" id="python"  name="s1" value="c++">Python</p>
+    </div>
+    <div>
+        <p>HTML stands For</p>
+           <p><input type="radio" id="hyptax" name="s2"  value="hyptax"> Hyper Tax Makes Line
+            <p><input type="radio" id="holi" name="s2"  value="holi"> Holistick Technical Method Library</p>
+            <p><input type="radio" id="html" name="s2"  value="html"> Hyper Text Markup Language
+            <p><input type="radio" id="noneof"  name="s2" value="noneof">None of the above</p> 
+    </div>
+    <div>
+        <p>Which HTML tag is used to make a text italic</p>
+           <p><input type="radio" id="li" name="s3"  value="hyptax"> il</p>
+            <p><input type="radio" id="i"  name="s3" value="i"> i</p>
+            <p><input type="radio" id="italic" name="s3"   value="html">italic</p>
+            <p><input type="radio" id="it"  name="s3"  value="it">it</p> 
+    </div>
+    <button onclick="funct()">SUBMIT</button>
+    </form>
+    </body>
+    </html>

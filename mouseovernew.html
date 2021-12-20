@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        .row {
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            background-repeat: no-repeat;
+            display: block;  
+            margin-left: auto;  
+            margin-right: auto;  
+            border: 8px ridge rgb(7, 7, 8);  
+            padding: 5px; 
+            width: 20%;
+            height:50%;
+        }
+        #heading1,#heading2{
+            text-align: center;
+            display:block;
+        }
+       
+    </style>
+</head>
+
+<body>
+    
+        <div class="content" id="content">
+            <img src="pic.jpg" id="image"><br><br>
+            
+                <h1 id="heading1">mouse hover here</h1>
+                <h1 id="heading2">hello world</h1>
+            
+       
+    </div>
+<script>
+    document.getElementById("content").addEventListener("mouseover",change1);
+    document.getElementById("content").addEventListener("mouseout",change2);
+    function change1(){
+        document.getElementById('image').src = "pic.jpg";
+        document.getElementById('heading1').style.display="none";
+        document.getElementById('heading2').style.display="block";
+    }
+    function change2(){
+        document.getElementById('image').src = "pic2.jpg";
+        document.getElementById('heading1').style.display="block";
+        document.getElementById('heading2').style.display="none";
+    }
+</script>
+</body>
+</html>

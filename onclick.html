@@ -1,0 +1,21 @@
+<html lang="en">
+
+<head>
+    <title>Background change</title>
+</head>
+<body>
+<center>
+    <input id="btn" type="button" value="Change background">
+    <script>
+        document.getElementById("btn").addEventListener("click", colorchange);
+        function colorchange()
+        {
+            Math.random() * 10000;
+            var color = '#' + Math.floor(Math.random() * 10000).toString(16);
+            document.body.style.background = color;
+        }
+    </script>
+    </center>
+</body>
+
+</html>
