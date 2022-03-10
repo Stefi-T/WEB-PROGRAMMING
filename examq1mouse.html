@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Event Handling
+        </title>
+        <script type="text/javascript">
+          function changeimagenew(image)
+          {
+            image.src = "pic1.png"
+          }
+          function changetoback(image)
+          {
+            image.src = "pic2.png"
+          }
+          function changetextnew()
+          {
+            document.getElementById('heading1').innerHTML = 'TEXT CHANGED';
+          }
+          function changeback()
+          {
+            document.getElementById('heading1').innerHTML= 'MOUSE HOVER ';
+          }
+    </script>
+    </head>
+    <body>
+              <img src="pic1.png" id="image" onMouseOver="changeimagenew(this)" onmouseout="changetoback(this)">
+             <br>
+             <h1 id="heading1" onMouseOver="changetextnew()" onmouseout="changeback()"> HELLO WORLD </h1>
+</body>
+</html>
+
